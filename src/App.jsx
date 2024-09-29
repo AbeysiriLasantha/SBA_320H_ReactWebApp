@@ -1,16 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Watchlist from './pages/Watchlist';
+import Header from './components/Header';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [watchlist, setWatchlist] = useState([]);  
+
+  const addToWatchlist = (movie) => {
+    setWatchlist((prevList) => [...prevList, movie]);
+  };
+
+  const removeFromWatchlist = (imdbID) => {
+    setWatchlist((prevList) => prevList.filter(movie => movie.imdbID !== imdbID));
+  };
 
   return (
-    <>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home addToWatchlist={addToWatchlist} />} />
+        <Route path="/watchlist" element={<Watchlist watchlist={watchlist} removeFromWatchlist={removeFromWatchlist} />} />
+      </Routes>
+    </Router>
+  );
+};
 
-    </>
-  )
-}
-
-export default App
+export default App;
