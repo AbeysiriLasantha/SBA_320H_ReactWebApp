@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Header() {
+const Header = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <header>
+      <nav>
+        <Link to="/">Search</Link>
+        <Link to="/watchlist">Watchlist</Link>
+      </nav>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
