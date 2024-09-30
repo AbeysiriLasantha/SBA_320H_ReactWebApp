@@ -3,6 +3,7 @@ import React from 'react';
 const SearchOption = ({ searchType, setSearchType }) => {
   return (
     <div className="search-options">
+
       <label>
         <input
           type="radio"
@@ -12,6 +13,7 @@ const SearchOption = ({ searchType, setSearchType }) => {
         />
         All
       </label>
+
       <label>
         <input
           type="radio"
@@ -21,6 +23,7 @@ const SearchOption = ({ searchType, setSearchType }) => {
         />
         Movie
       </label>
+
       <label>
         <input
           type="radio"
@@ -30,6 +33,7 @@ const SearchOption = ({ searchType, setSearchType }) => {
         />
         Series
       </label>
+
       <label>
         <input
           type="radio"
@@ -39,6 +43,7 @@ const SearchOption = ({ searchType, setSearchType }) => {
         />
         Episode
       </label>
+      
     </div>
   );
 };
