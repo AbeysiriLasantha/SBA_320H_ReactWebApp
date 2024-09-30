@@ -1,6 +1,6 @@
 <h1 align="center">SBA 320H - React Web Application Project</h1>
 
-This application, MovieMap, is built using HTML, CSS, JavaScript, REACT providing an interactive platform for movie searches. It is hosted on Heroku and utilizes AJAX to fetch real-time movie data from the OMDB API, dynamically displaying the information in the user interface. The project is actively maintained with frequent commits to GitHub and includes comprehensive documentation for users.
+This application, "BoxOffice", is built using HTML, CSS, JavaScript, REACT providing an interactive platform for movie searches. It is hosted on Heroku and utilizes AJAX to fetch real-time movie data from the OMDB API, dynamically displaying the information in the user interface. The project is actively maintained with frequent commits to GitHub and includes comprehensive documentation for users.
 
 ## Technologies Used
 

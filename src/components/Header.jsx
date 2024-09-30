@@ -1,4 +1,5 @@
 import React from 'react';
+// import logo1 from '../assets/logo1.gif'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -6,16 +7,16 @@ const Header = () => {
     <header>
       <nav className='appTitle'> 
         <h1 className='movieMapTitle'> BoxOffice </h1> 
-      </nav>
+        {/* <img src={logo1} alt="Logo" className="app-logo" /> */}
 
-      <nav>
-        <Link to="/" className="searchBtn">Search</Link>
-        <Link to="/watchlist" className='addToListBtn'>Watchlist</Link>
       </nav>
-
+      
+      <nav className='navLinks'>
+        <Link className = 'searchBtn' to="/">Search</Link>
+        <Link className = 'addToListBtn' to="/watchlist">Watchlist</Link>
+      </nav>
     </header>
 
-    
   );
 };
 

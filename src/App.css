@@ -146,17 +146,16 @@ form button:hover {
   padding-bottom: 10px;
 }
 
-
 .addToListBtn, .searchBtn {
-  display: inline-block;
-  padding: 10px 20px; /* Adjust padding for button size */
-  margin: 10px; /* Space between buttons */
-  background-color: #3d60ed; /* Button background color */
-  color: white; /* Text color */
-  text-decoration: none; /* Remove underline from links */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-  font-size: 18px;
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  margin: 10px !important;
+  background-color: #3d60ed !important;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 5px !important;
+  transition: background-color 0.3s ease !important;
+  font-size: 18px !important;
 }
 
 .addToListBtn:hover  {
@@ -166,3 +165,4 @@ form button:hover {
 .searchBtn:hover   {
   background-color: #00BFFF; /* Change color on hover */
 }
+
