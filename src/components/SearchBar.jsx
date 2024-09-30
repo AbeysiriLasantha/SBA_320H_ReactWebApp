@@ -1,26 +1,30 @@
+// SearchBar.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import SearchOption from './SearchOption';
 
 const SearchBar = ({ setMovies }) => {
   const [title, setTitle] = useState('');
-  const [apiKey, setApiKey] = useState("");
+  const [searchType, setSearchType] = useState(''); // Add state for filtering options
+  const [apiKey, setApiKey] = useState('');
 
   // Get the API key from the environment variable when the component mounts
   useEffect(() => {
-    const key = import.meta.env.VITE_API_KEY
-    //console.log("API Key:", key); 
+    const key = import.meta.env.VITE_API_KEY;
     setApiKey(key);
-  }, []); // Runs once on mount
+  }, []);
 
   const handleSearch = async (e) => {
     e.preventDefault();
 
     if (title) {
       try {
-        const response = await axios.get(`https://www.omdbapi.com/?s=${title}&apikey=${apiKey}`);
-        setMovies(response.data.Search || []);  // Update the state in Home component
+        const response = await axios.get(
+          `https://www.omdbapi.com/?s=${title}&type=${searchType}&apikey=${apiKey}`
+        );
+        setMovies(response.data.Search || []);
       } catch (error) {
-        console.error("Error fetching movies:", error);
+        console.error('Error fetching movies:', error);
       }
       setTitle('');
     }
@@ -28,6 +32,7 @@ const SearchBar = ({ setMovies }) => {
 
   return (
     <form onSubmit={handleSearch}>
+      
       <input
         type="text"
         value={title}
@@ -35,6 +40,10 @@ const SearchBar = ({ setMovies }) => {
         placeholder="Search for a movie..."
       />
       <button type="submit">Search</button>
+      <div>
+      <SearchOption searchType={searchType} setSearchType={setSearchType} />
+      </div>
+      
     </form>
   );
 };
