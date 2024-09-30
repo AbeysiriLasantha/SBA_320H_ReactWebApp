@@ -9,8 +9,8 @@ const Header = () => {
       </nav>
 
       <nav>
-        <Link to="/" className="button">Search</Link>
-        <Link to="/watchlist" className="button">Watchlist</Link>
+        <Link to="/" className="searchBtn">Search</Link>
+        <Link to="/watchlist" className='addToListBtn'>Watchlist</Link>
       </nav>
 
     </header>
