@@ -25,4 +25,4 @@ This application, "BoxOffice", is built using HTML, CSS, JavaScript, REACT provi
    - **State Management**: Managed UI state using React's built-in hooks like `useState` and `useEffect`.
 
 3. **Deployment**: 
-   - Hosted the project on [Heroku](#) for live access.
+   - Hosted the project on [Netlify](https://bejewelled-douhua-75644f.netlify.app/) for live access.
