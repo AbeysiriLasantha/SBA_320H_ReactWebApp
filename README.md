@@ -1,10 +1,8 @@
-# SBA 320H - React Web Application Project
+<h1 align="center">SBA 320H - React Web Application Project</h1>
 
-A brief description of what your project does and why it exists.
+This application, MovieMap, is built using HTML, CSS, JavaScript, REACT providing an interactive platform for movie searches. It is hosted on Heroku and utilizes AJAX to fetch real-time movie data from the OMDB API, dynamically displaying the information in the user interface. The project is actively maintained with frequent commits to GitHub and includes comprehensive documentation for users.
 
 ## Technologies Used
-
-This project uses the following technologies:
 
 - **HTML5**: For structuring the content.
 - **CSS3**: For styling the user interface.
@@ -17,7 +15,7 @@ This project uses the following technologies:
 ## Approach Taken
 
 1. **Planning**: 
-   - Defined the key features of the application.
+   - Determined the key features of the application.
    - Created a layout wireframe for the UI.
    - Selected OMDb API as the data source for the project.
 
@@ -27,14 +25,4 @@ This project uses the following technologies:
    - **State Management**: Managed UI state using React's built-in hooks like `useState` and `useEffect`.
 
 3. **Deployment**: 
-   - Hosted the project on [Heroku/Netlify](#) for live access.
-
-## Live Site
-
-You can visit the live site here: [Live Site Link](#)
-
-## Usage Instructions
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/repository-name.git
+   - Hosted the project on [Heroku](#) for live access.
